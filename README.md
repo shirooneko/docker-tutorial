@@ -58,7 +58,6 @@ sudo docker exec -it mysql-container mysql -u root -p
 ```
 masukan password yang tadi sudah di atur. jika sudah masuk maka tampilanya akan menjadi seperti ini :
 ![docker-tutorial](image/2.jpg)
-
 ## instalasi phpmyadmin  
 pull image phpmyadmin dari docker hub :
 ```
