@@ -51,6 +51,7 @@ periksa Instalasi MySQL :
 ```
 sudo docker ps
 ```
+![docker-tutorial](image/1.jpg)
 masuk ke mysql yang ada di docker :
 ```
 sudo docker exec -it mysql-container mysql -u root -p
