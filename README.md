@@ -66,4 +66,4 @@ buat container phpmyadmin :
 ```
 docker run -d --name phpmyadmin-container -e PMA_HOST=192.168.0.103 -e PMA_PORT=3306 -p 8080:80 phpmyadmin/phpmyadmin
 ```
-setalah itu coba jalankan `192.168.0.103:8080`
+`PMA_HOST=192.168.0.103` masukan ip dari ubuntu server anda. setalah itu coba jalankan `192.168.0.103:8080`
