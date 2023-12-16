@@ -204,7 +204,7 @@ Isikan test php
 phpinfo();
 ?>
 ```
-Setelah itu buka di web browser 192.168.0.103:8081/
+Setelah itu buka di web browser `http://192.168.0.103:8081/`
 
 
 
