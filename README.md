@@ -58,7 +58,7 @@ sudo docker exec -it mysql-container mysql -u root -p
 ```
 masukan password yang tadi sudah di atur. jika sudah masuk maka tampilanya akan menjadi seperti ini :
 ![docker-tutorial](image/2.jpg)
-## instalasi phpmyadmin  
+## instalasi phpmyadmin di docker
 pull image phpmyadmin dari docker hub :
 ```
 sudo docker pull phpmyadmin/phpmyadmin
@@ -69,8 +69,18 @@ docker run -d --name phpmyadmin-container -e PMA_HOST=192.168.0.103 -e PMA_PORT=
 ```
 `PMA_HOST=192.168.0.103` masukan ip dari ubuntu server anda. setalah itu coba jalankan `192.168.0.103:8080`
 
-## Install nginx di dalam docker
+## Install nginx dan php fpm di  docker
 
+Sebelum install nginx buatlah directory yang berfungsi untuk menghubungkan directory pada 2 container yaitu nginx dan php fpm nya
+Buat directory dengan nama bebas
+```
+mkdir ci4nginx
+```
+masuk ke directory
+```
+cd ci4nginx
+```
+### Install nginx
 pull image nginx 
 ```
 sudo docker pull nginx:latest
@@ -80,3 +90,5 @@ buat container nginx
 ```
 sudo docker run -d -p 8081:80 --name nginx-container -v $(pwd):/var/www nginx
 ```
+### 
+
