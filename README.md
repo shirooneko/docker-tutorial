@@ -68,3 +68,15 @@ buat container phpmyadmin :
 docker run -d --name phpmyadmin-container -e PMA_HOST=192.168.0.103 -e PMA_PORT=3306 -p 8080:80 phpmyadmin/phpmyadmin
 ```
 `PMA_HOST=192.168.0.103` masukan ip dari ubuntu server anda. setalah itu coba jalankan `192.168.0.103:8080`
+
+## Install nginx di dalam docker
+
+pull image nginx 
+```
+sudo docker pull nginx:latest
+```
+
+buat container nginx
+```
+sudo docker run -d -p 8081:80 --name nginx-container -v $(pwd):/var/www nginx
+```
